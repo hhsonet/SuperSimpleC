@@ -25,7 +25,7 @@ The program rounds numbers using the following logic:
 
 ### Code
 
-The solution is implemented in `rounding-float.c`. You can check the code [here](rounding-float.c).
+The solution is implemented in `rounding-float.c`. You can check the code [here](https://github.com/HamudiHasan/SuperSimpleC/blob/main/rounding-float.c).
 
 ## How to Compile and Run
 
