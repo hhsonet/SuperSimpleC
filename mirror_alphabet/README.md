@@ -26,4 +26,4 @@ The program calculates the mirror letter using the following logic:
   mirror = 'z' - (input - 'a');
   
 ### Code
-The solution is implemented in `rounding-float.c`. You can check the code [here](https://github.com/HamudiHasan/SuperSimpleC/blob/main/rounding-float.c).
+The solution is implemented in `rounding-float.c`. You can check the code [here](https://github.com/HamudiHasan/SuperSimpleC/blob/main/mirror_alphabet/mirror_alphabet.c).
