@@ -12,4 +12,5 @@ A collection of beginner-friendly programming problems focusing on operations wi
 - **Digit Manipulation**: Extract and use digits of two-digit numbers.
 - **Logical Problem Solving**: Develop problem-solving skills with practical examples.
 
-
+### Code
+The solution is implemented in `rounding-float.c`. You can check the code [here](https://github.com/hhsonet/SuperSimpleC/blob/main/TwoDigitFun/two_digit_fun.c).
