@@ -12,24 +12,4 @@ A collection of beginner-friendly programming problems focusing on operations wi
 - **Digit Manipulation**: Extract and use digits of two-digit numbers.
 - **Logical Problem Solving**: Develop problem-solving skills with practical examples.
 
-## How to Use
-1. Browse the repository to view problem statements.
-2. Pick a problem and try solving it on your own.
-3. Check out the provided solutions for reference.
 
-## Contributions
-We welcome contributions!  
-Feel free to:
-- Add new problems.
-- Provide solutions in other languages.
-- Suggest improvements or optimizations.
-
-## Example Problem
-**Problem Statement:**  
-You are given a two-digit positive integer \( n \). Your task is to find the sum of its digits.
-
-**Input:**  
-A single two-digit integer \( n \) (\( 10 \leq n \leq 99 \)).
-
-**Output:**  
-The sum of the digits of \( n \).
