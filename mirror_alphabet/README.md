@@ -26,4 +26,4 @@ The program calculates the mirror letter using the following logic:
   mirror = 'z' - (input - 'a');
   
 ### Code
-The solution is implemented in `two_digit_fun.c`. You can check the code [here](https://github.com/hhsonet/SuperSimpleC/blob/main/TwoDigitFun/two_digit_fun.c).
+The solution is implemented in `mirror_alphabet.c`. You can check the code [here](https://github.com/HamudiHasan/SuperSimpleC/blob/main/mirror_alphabet/mirror_alphabet.c).
