@@ -5,7 +5,13 @@
 
 A minimalist GitHub Pages for sharing C programming fundamentals and curated problem sets. Designed for clear learning with zero fluff.
 
-## 🚀 Features
+## 📖 Topics Covered
 
-- 📌 Clean C code examples
-- 🎯 Progressive difficulty problem sets
+### 🔰 Fundamental Concepts
+- Basic syntax and program structure
+- Data types and variables
+- Operators and expressions
+- Control flow (if/else, loops)
+- Functions and scope
+- Basic I/O operations
+
