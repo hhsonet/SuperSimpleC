@@ -1,0 +1,6 @@
+5
+201 Seong_Gi-hun 50 60 55 45 40
+202 Cho_Sang-woo 30 25 20 15 10
+203 Kang_Sae-byeok 80 75 60 55 50
+204 Abdul_Ali 45 40 35 30 25
+205 Han_Mi-nyeo 70 65 60 70 65
