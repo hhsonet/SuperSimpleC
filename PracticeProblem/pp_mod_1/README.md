@@ -1,4 +1,4 @@
-# Programming Assignment: Dynamic Equation Solver with Character Analysis
+# Practice Problem: Dynamic Equation Solver with Character Analysis
 
 ## Problem Overview
 Create a program that dynamically selects and solves mathematical equations based on your student ID, converts numerical results into alphabetic characters, and performs character classification.
@@ -158,22 +158,5 @@ Test your program with these cases to ensure correctness:
 - Negative results (test how modulo handles negative numbers)
 - Large input values
 
-### Grading Criteria
-- ✓ Correct equation selection logic
-- ✓ Accurate equation implementation
-- ✓ Proper integer division handling
-- ✓ Correct modulo and alphabet mapping
-- ✓ Accurate vowel/consonant classification
-- ✓ Clean, readable code with comments
-- ✓ Proper input validation and error handling
-
----
-
-## Submission Requirements
-
-Submit your program with:
-1. Source code file(s)
-2. Screenshot of test runs showing at least 3 different test cases
-3. Brief documentation explaining your approach
 
 **Good luck!**
