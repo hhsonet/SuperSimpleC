@@ -16,7 +16,7 @@ while IFS= read -r -d '' file; do
   output_name="${output_name%.c}"
   gcc -Wall -Wextra -std=c11 "$file" -o "$BUILD_DIR/$output_name"
   echo "Compiled: $rel_path"
-done < <(find "$ROOT" -name '*.c' -print0)
+done < <(find "$ROOT" -path "$BUILD_DIR" -prune -o -name '*.c' -print0)
 
 gcc -Wall -Wextra -std=c11 \
   "$ROOT/squid-game-player-manager/main.c" \

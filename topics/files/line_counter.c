@@ -5,6 +5,7 @@ int main(void)
     char path[256];
     FILE *fp;
     int ch;
+    int last_ch = '\n';
     int lines = 0;
     int has_content = 0;
 
@@ -25,6 +26,7 @@ int main(void)
     while ((ch = fgetc(fp)) != EOF)
     {
         has_content = 1;
+        last_ch = ch;
         if (ch == '\n')
         {
             lines++;
@@ -35,7 +37,11 @@ int main(void)
 
     if (has_content)
     {
-        printf("Line count: %d\n", lines + 1);
+        if (last_ch != '\n')
+        {
+            lines++;
+        }
+        printf("Line count: %d\n", lines);
     }
     else
     {

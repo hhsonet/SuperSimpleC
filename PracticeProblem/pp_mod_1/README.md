@@ -19,7 +19,8 @@ Equations:
 ## Output
 - Selected equation number
 - Integer result `R`
-- Letter from `(R % 26) + 1`
+- Letter from normalized position:
+  `position = ((R % 26) + 26) % 26 + 1`
 - Classification (`vowel` or `consonant`)
 
 ## Sample Run

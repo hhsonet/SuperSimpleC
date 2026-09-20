@@ -15,6 +15,8 @@ Store student records in structs and compute class average.
 Enter number of students (1-5): 2
 Enter name and score for student 1: Asha 80
 Enter name and score for student 2: Rafi 90
+Asha: 80
+Rafi: 90
 Class average: 85.00
 ```
 
