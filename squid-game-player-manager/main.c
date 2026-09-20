@@ -15,8 +15,22 @@ int main(void)
     Player players[MAX_PLAYERS];
     int playerCount;
     int choice;
+    const char *playerFileCandidates[] = {
+        "players.txt",
+        "squid-game-player-manager/players.txt"
+    };
+    int fileLoaded = 0;
 
-    if (!loadPlayers("players.txt", players, MAX_PLAYERS, &playerCount))
+    for (int i = 0; i < 2; i++)
+    {
+        if (loadPlayers(playerFileCandidates[i], players, MAX_PLAYERS, &playerCount))
+        {
+            fileLoaded = 1;
+            break;
+        }
+    }
+
+    if (!fileLoaded)
     {
         printf("Error: Could not read or parse players.txt\n");
         return 1;

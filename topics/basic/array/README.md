@@ -1,4 +1,4 @@
-# bubble_sort_trace
+# topics/basic/array
 
 ## Problem
 Trace bubble sort passes and swaps for a fixed integer array.

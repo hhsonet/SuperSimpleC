@@ -13,12 +13,17 @@ while IFS= read -r -d '' file; do
   fi
 
   rel_main="${file#$ROOT/}"
-  dir="$(dirname "$file")"
   output_name="${rel_main//\//_}"
   output_name="${output_name%.c}"
 
-  mapfile -d '' sources < <(find "$dir" -maxdepth 1 -name '*.c' -print0)
-  gcc -Wall -Wextra -std=c11 "${sources[@]}" -o "$BUILD_DIR/$output_name"
+  if [[ "$rel_main" == squid-game-player-manager/* ]]; then
+    dir="$(dirname "$file")"
+    mapfile -d '' sources < <(find "$dir" -maxdepth 1 -name '*.c' -print0)
+    gcc -Wall -Wextra -std=c11 "${sources[@]}" -o "$BUILD_DIR/$output_name"
+  else
+    gcc -Wall -Wextra -std=c11 "$file" -o "$BUILD_DIR/$output_name"
+  fi
+
   echo "Compiled target: $rel_main"
 done < <(find "$ROOT" -path "$BUILD_DIR" -prune -o -name '*.c' -print0)
 
