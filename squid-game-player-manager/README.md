@@ -4,7 +4,7 @@
 Manage player scores from a file, update alive/eliminated status, search by player ID, and show prize totals.
 
 ## Input
-- Data file: `/home/runner/work/SuperSimpleC/SuperSimpleC/squid-game-player-manager/players.txt`
+- Data file: `squid-game-player-manager/players.txt`
 - Menu choices from user (`1..5`)
 - Optional player ID for search
 
@@ -24,11 +24,11 @@ Manage player scores from a file, update alive/eliminated status, search by play
 ## Compile and Run
 ```bash
 gcc -Wall -Wextra -std=c11 \
-  /home/runner/work/SuperSimpleC/SuperSimpleC/squid-game-player-manager/main.c \
-  /home/runner/work/SuperSimpleC/SuperSimpleC/squid-game-player-manager/player_io.c \
-  /home/runner/work/SuperSimpleC/SuperSimpleC/squid-game-player-manager/player_logic.c \
+  squid-game-player-manager/main.c \
+  squid-game-player-manager/player_io.c \
+  squid-game-player-manager/player_logic.c \
   -o /tmp/squid_game_manager
-(cd /home/runner/work/SuperSimpleC/SuperSimpleC/squid-game-player-manager && /tmp/squid_game_manager)
+(cd squid-game-player-manager && /tmp/squid_game_manager)
 ```
 
 ## Edge Cases

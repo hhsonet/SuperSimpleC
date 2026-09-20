@@ -19,7 +19,7 @@ Enter an operator (+, -, *, /): +
 
 ## Compile and Run
 ```bash
-gcc -Wall -Wextra -std=c11 /home/runner/work/SuperSimpleC/SuperSimpleC/digitOp/digit_operation_game.c -o /tmp/digit_op
+gcc -Wall -Wextra -std=c11 digitOp/digit_operation_game.c -o /tmp/digit_op
 /tmp/digit_op
 ```
 

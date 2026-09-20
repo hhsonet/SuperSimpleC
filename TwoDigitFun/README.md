@@ -17,7 +17,7 @@ The sum of its digits is: 11
 
 ## Compile and Run
 ```bash
-gcc -Wall -Wextra -std=c11 /home/runner/work/SuperSimpleC/SuperSimpleC/TwoDigitFun/two_digit_fun.c -o /tmp/two_digit_fun
+gcc -Wall -Wextra -std=c11 TwoDigitFun/two_digit_fun.c -o /tmp/two_digit_fun
 /tmp/two_digit_fun
 ```
 

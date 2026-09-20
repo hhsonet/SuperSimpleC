@@ -32,9 +32,9 @@ A beginner-friendly C programming repository with small, focused exercises and o
 Use the compile-all script to validate all C files:
 
 ```bash
-bash /home/runner/work/SuperSimpleC/SuperSimpleC/scripts/build_all.sh
+bash scripts/build_all.sh
 ```
 
 ## Contributing
 
-See `/home/runner/work/SuperSimpleC/SuperSimpleC/CONTRIBUTING.md` for standards on folder structure, README template, naming, and validation.
+See `CONTRIBUTING.md` for standards on folder structure, README template, naming, and validation.

@@ -17,7 +17,7 @@ Reversed: olleh
 
 ## Compile and Run
 ```bash
-gcc -Wall -Wextra -std=c11 /home/runner/work/SuperSimpleC/SuperSimpleC/topics/strings/reverse_string.c -o /tmp/reverse_string
+gcc -Wall -Wextra -std=c11 topics/strings/reverse_string.c -o /tmp/reverse_string
 /tmp/reverse_string
 ```
 

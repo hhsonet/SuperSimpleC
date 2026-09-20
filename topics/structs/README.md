@@ -22,7 +22,7 @@ Class average: 85.00
 
 ## Compile and Run
 ```bash
-gcc -Wall -Wextra -std=c11 /home/runner/work/SuperSimpleC/SuperSimpleC/topics/structs/student_average.c -o /tmp/student_average
+gcc -Wall -Wextra -std=c11 topics/structs/student_average.c -o /tmp/student_average
 /tmp/student_average
 ```
 

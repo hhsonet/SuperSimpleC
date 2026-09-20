@@ -38,6 +38,7 @@ int main(void)
             clearInputBuffer();
             continue;
         }
+        clearInputBuffer();
 
         switch (choice)
         {
@@ -57,6 +58,7 @@ int main(void)
                     clearInputBuffer();
                     break;
                 }
+                clearInputBuffer();
 
                 index = findPlayerIndexById(players, playerCount, searchId);
                 if (index < 0)

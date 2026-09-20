@@ -18,7 +18,7 @@ After swap: a=9, b=4
 
 ## Compile and Run
 ```bash
-gcc -Wall -Wextra -std=c11 /home/runner/work/SuperSimpleC/SuperSimpleC/topics/pointers/swap_with_pointers.c -o /tmp/swap_with_pointers
+gcc -Wall -Wextra -std=c11 topics/pointers/swap_with_pointers.c -o /tmp/swap_with_pointers
 /tmp/swap_with_pointers
 ```
 

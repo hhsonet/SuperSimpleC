@@ -17,7 +17,7 @@ Line count: 3
 
 ## Compile and Run
 ```bash
-gcc -Wall -Wextra -std=c11 /home/runner/work/SuperSimpleC/SuperSimpleC/topics/files/line_counter.c -o /tmp/line_counter
+gcc -Wall -Wextra -std=c11 topics/files/line_counter.c -o /tmp/line_counter
 /tmp/line_counter
 ```
 

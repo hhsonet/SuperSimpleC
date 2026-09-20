@@ -20,7 +20,7 @@ Sorted array:
 
 ## Compile and Run
 ```bash
-gcc -Wall -Wextra -std=c11 /home/runner/work/SuperSimpleC/SuperSimpleC/topics/basic/array/bubble_sort_trace.c -o /tmp/bubble_trace
+gcc -Wall -Wextra -std=c11 topics/basic/array/bubble_sort_trace.c -o /tmp/bubble_trace
 /tmp/bubble_trace
 ```
 

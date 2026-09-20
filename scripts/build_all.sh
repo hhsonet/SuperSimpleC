@@ -8,21 +8,18 @@ rm -rf "$BUILD_DIR"
 mkdir -p "$BUILD_DIR"
 
 while IFS= read -r -d '' file; do
-  rel_path="${file#$ROOT/}"
-  if [[ "$rel_path" == squid-game-player-manager/main.c || "$rel_path" == squid-game-player-manager/player_io.c || "$rel_path" == squid-game-player-manager/player_logic.c ]]; then
+  if ! grep -qE '^int[[:space:]]+main[[:space:]]*\(' "$file"; then
     continue
   fi
-  output_name="${rel_path//\//_}"
+
+  rel_main="${file#$ROOT/}"
+  dir="$(dirname "$file")"
+  output_name="${rel_main//\//_}"
   output_name="${output_name%.c}"
-  gcc -Wall -Wextra -std=c11 "$file" -o "$BUILD_DIR/$output_name"
-  echo "Compiled: $rel_path"
+
+  mapfile -d '' sources < <(find "$dir" -maxdepth 1 -name '*.c' -print0)
+  gcc -Wall -Wextra -std=c11 "${sources[@]}" -o "$BUILD_DIR/$output_name"
+  echo "Compiled target: $rel_main"
 done < <(find "$ROOT" -path "$BUILD_DIR" -prune -o -name '*.c' -print0)
 
-gcc -Wall -Wextra -std=c11 \
-  "$ROOT/squid-game-player-manager/main.c" \
-  "$ROOT/squid-game-player-manager/player_io.c" \
-  "$ROOT/squid-game-player-manager/player_logic.c" \
-  -o "$BUILD_DIR/squid-game-player-manager"
-echo "Compiled: squid-game-player-manager (multi-file)"
-
-echo "All C files compiled successfully."
+echo "All executable targets compiled successfully."

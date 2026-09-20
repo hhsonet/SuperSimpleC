@@ -17,7 +17,7 @@ Rounded integer: -3
 
 ## Compile and Run
 ```bash
-gcc -Wall -Wextra -std=c11 /home/runner/work/SuperSimpleC/SuperSimpleC/rounding-float/rounding-float.c -o /tmp/rounding_float
+gcc -Wall -Wextra -std=c11 rounding-float/rounding-float.c -o /tmp/rounding_float
 /tmp/rounding_float
 ```
 

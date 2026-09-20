@@ -17,7 +17,7 @@ Factorial(5) = 120
 
 ## Compile and Run
 ```bash
-gcc -Wall -Wextra -std=c11 /home/runner/work/SuperSimpleC/SuperSimpleC/topics/functions/factorial_function.c -o /tmp/factorial_function
+gcc -Wall -Wextra -std=c11 topics/functions/factorial_function.c -o /tmp/factorial_function
 /tmp/factorial_function
 ```
 

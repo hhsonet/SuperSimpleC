@@ -29,7 +29,7 @@ Each exercise README should include these sections in order:
 Before opening a PR, run:
 
 ```bash
-bash /home/runner/work/SuperSimpleC/SuperSimpleC/scripts/build_all.sh
+bash scripts/build_all.sh
 ```
 
 If you add new source files, ensure they compile with `gcc -Wall -Wextra -std=c11`.

@@ -17,7 +17,7 @@ The mirror of 'c' in the alphabet is 'x'.
 
 ## Compile and Run
 ```bash
-gcc -Wall -Wextra -std=c11 /home/runner/work/SuperSimpleC/SuperSimpleC/mirror_alphabet/mirror_alphabet.c -o /tmp/mirror_alphabet
+gcc -Wall -Wextra -std=c11 mirror_alphabet/mirror_alphabet.c -o /tmp/mirror_alphabet
 /tmp/mirror_alphabet
 ```
 
