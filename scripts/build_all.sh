@@ -17,6 +17,9 @@ while IFS= read -r -d '' file; do
   output_name="${output_name%.c}"
 
   if [[ "$rel_main" == squid-game-player-manager/* ]]; then
+    if [[ "$rel_main" != "squid-game-player-manager/main.c" ]]; then
+      continue
+    fi
     dir="$(dirname "$file")"
     mapfile -d '' sources < <(find "$dir" -maxdepth 1 -name '*.c' -print0)
     gcc -Wall -Wextra -std=c11 "${sources[@]}" -o "$BUILD_DIR/$output_name"
