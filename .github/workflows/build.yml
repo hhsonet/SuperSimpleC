@@ -1,0 +1,15 @@
+name: Build C Programs
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compile all C files
+        run: bash scripts/build_all.sh

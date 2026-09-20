@@ -1,34 +1,27 @@
-# Rounding a Floating-Point Number to the Nearest Integer
+# rounding-float
 
-This C program demonstrates how to round a floating-point number to the nearest integer using only arithmetic operations. It avoids using the `round()` function and instead applies basic mathematical logic for both positive and negative numbers.
+## Problem
+Read a floating-point number and round it to the nearest integer without using `round()`.
 
-## Problem Statement
+## Input
+- One floating-point value
 
-Write a C program that takes a floating-point number as input and outputs its nearest integer. The program must not use any built-in rounding functions (like `round()`). Instead, solve the problem using only arithmetic operations.
+## Output
+- Rounded integer value
 
-### Example Input and Output
+## Sample Run
+```text
+Enter a floating-point number: -3.3
+Rounded integer: -3
+```
 
-1. **Input**: `4.7`
-   - **Output**: `5`
-   
-2. **Input**: `-3.3`
-   - **Output**: `-3`
+## Compile and Run
+```bash
+gcc -Wall -Wextra -std=c11 /home/runner/work/SuperSimpleC/SuperSimpleC/rounding-float/rounding-float.c -o /tmp/rounding_float
+/tmp/rounding_float
+```
 
-3. **Input**: `5.5`
-   - **Output**: `6`
-
-## Solution Explanation
-
-The program rounds numbers using the following logic:
-- For **positive numbers**, add `0.5` and then truncate the result (i.e., cast it to an integer). This moves the value closer to the nearest integer.
-- For **negative numbers**, subtract `0.5` and then truncate. This ensures rounding toward the nearest integer as well.
-
-### Code
-
-The solution is implemented in `rounding-float.c`. You can check the code [here](https://github.com/HamudiHasan/SuperSimpleC/blob/main/rounding-float/rounding-float.c).
-
-## How to Compile and Run
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/HamudiHasanSonet/SuperSimpleC.git
+## Edge Cases
+- Non-numeric input
+- Exact `.5` values
+- Negative values

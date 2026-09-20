@@ -1,16 +1,26 @@
-# TwoDigitChallenges
+# TwoDigitFun
 
-A collection of beginner-friendly programming problems focusing on operations with two-digit numbers. This repository includes problems like finding the sum of digits, simple arithmetic operations, and basic logic tasks to help new programmers build their foundational skills.
+## Problem
+Given a two-digit positive integer, print the sum of its tens and units digits.
 
-## Features
-- Simple and engaging problems for beginners.
-- Clear problem statements with examples.
-- Solutions available in multiple programming languages (e.g., C, Python).
+## Input
+- One integer in the range `10` to `99`
 
-## Topics Covered
-- **Basic Arithmetic Operations**: Add, subtract, multiply, and divide digits.
-- **Digit Manipulation**: Extract and use digits of two-digit numbers.
-- **Logical Problem Solving**: Develop problem-solving skills with practical examples.
+## Output
+- The sum of the two digits
 
-### Code
-The solution is implemented in `rounding-float.c`. You can check the code [here](https://github.com/hhsonet/SuperSimpleC/blob/main/TwoDigitFun/two_digit_fun.c).
+## Sample Run
+```text
+Enter a two-digit positive integer: 56
+The sum of its digits is: 11
+```
+
+## Compile and Run
+```bash
+gcc -Wall -Wextra -std=c11 /home/runner/work/SuperSimpleC/SuperSimpleC/TwoDigitFun/two_digit_fun.c -o /tmp/two_digit_fun
+/tmp/two_digit_fun
+```
+
+## Edge Cases
+- Non-numeric input
+- Values outside `10..99`

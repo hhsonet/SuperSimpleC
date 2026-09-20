@@ -1,29 +1,27 @@
-# Mirror Alphabet Program in C
+# mirror_alphabet
 
-This C program takes a lowercase letter as input and prints its "mirror" in the alphabet. The mirror of a letter is the letter that is symmetrically opposite in the alphabet. For example, the mirror of 'a' is 'z', the mirror of 'b' is 'y', and so on.
+## Problem
+Given a lowercase letter, print its mirror in the alphabet (`a↔z`, `b↔y`, ...).
 
-## Problem Statement
+## Input
+- One lowercase letter from `a` to `z`
 
-Write a C program that takes a lowercase letter as input and outputs its mirror letter in the alphabet. The program must only use arithmetic operations to compute the mirror.
+## Output
+- The mirrored letter
 
-### Example Input and Output
+## Sample Run
+```text
+Enter a lowercase letter: c
+The mirror of 'c' in the alphabet is 'x'.
+```
 
-- Input: `a`  
-  Output: `z`
+## Compile and Run
+```bash
+gcc -Wall -Wextra -std=c11 /home/runner/work/SuperSimpleC/SuperSimpleC/mirror_alphabet/mirror_alphabet.c -o /tmp/mirror_alphabet
+/tmp/mirror_alphabet
+```
 
-- Input: `b`  
-  Output: `y`
-
-- Input: `c`  
-  Output: `x`
-
-## Solution Explanation
-
-The program calculates the mirror letter using the following logic:
-
-- **For any letter 'input'**, the formula used to find its mirror is:  
-  ```c
-  mirror = 'z' - (input - 'a');
-  
-### Code
-The solution is implemented in `mirror_alphabet.c`. You can check the code [here](https://github.com/HamudiHasan/SuperSimpleC/blob/main/mirror_alphabet/mirror_alphabet.c).
+## Edge Cases
+- Empty input
+- Non-letter input
+- Uppercase letters
