@@ -35,6 +35,7 @@ int main(void)
         printf("Error: Could not read or parse players.txt\n");
         return 1;
     }
+    updateStatus(players, playerCount);
 
     do
     {

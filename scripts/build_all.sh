@@ -8,7 +8,7 @@ rm -rf "$BUILD_DIR"
 mkdir -p "$BUILD_DIR"
 
 while IFS= read -r -d '' file; do
-  if ! grep -qE '^int[[:space:]]+main[[:space:]]*\(' "$file"; then
+  if ! grep -qE '^[[:space:]]*int[[:space:]]+main[[:space:]]*\(' "$file"; then
     continue
   fi
 
