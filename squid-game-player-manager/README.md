@@ -28,7 +28,7 @@ gcc -Wall -Wextra -std=c11 \
   squid-game-player-manager/player_io.c \
   squid-game-player-manager/player_logic.c \
   -o /tmp/squid_game_manager
-(cd squid-game-player-manager && /tmp/squid_game_manager)
+/tmp/squid_game_manager
 ```
 
 ## Edge Cases

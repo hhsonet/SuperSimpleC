@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
@@ -10,9 +11,16 @@ int main(void)
     int has_content = 0;
 
     printf("Enter file path: ");
-    if (scanf("%255s", path) != 1)
+    if (fgets(path, sizeof(path), stdin) == NULL)
     {
         printf("Error: Invalid file path input.\n");
+        return 1;
+    }
+    path[strcspn(path, "\n")] = '\0';
+
+    if (path[0] == '\0')
+    {
+        printf("Error: Empty file path.\n");
         return 1;
     }
 
