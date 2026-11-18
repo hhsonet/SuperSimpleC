@@ -139,11 +139,11 @@ Test your program with these cases to ensure correctness:
 | 3 | 4 | 5 | 8 | 2 | 16 | 17 | Q | consonant |
 | 0 | 1 | 6 | 9 | 3 | 11 | 12 | L | consonant |
 | 5 | 2 | 4 | 2 | 4 | 12 | 13 | M | consonant |
-| 2 | 3 | 3 | 5 | 6 | 35 | 10 | J | consonant |
+| 2 | 3 | 3 | 5 | 6 | 35 | 10 | J | consonant | 
 
 ---
 
-## Implementation Guidelines
+## Implementation Guidelines 
 
 ### Required Functions/Methods (Recommended Structure)
 
